@@ -23,7 +23,7 @@ export default function Login() {
     });
     setLoading(false);
     if (res.ok) {
-      router.push('/home');
+      router.push('/ImageList');
     } else {
       const data = await res.json();
       setMessage(data.message);
