@@ -228,3 +228,210 @@
     transform: rotate(0deg);
   }
 }
+
+
+/* ImageList Style*/
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+.img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-top: 2px;
+  width: 230px;
+  height: 330px; 
+  object-fit: cover;
+  border-radius: 7px;
+  
+}
+
+.likeButton {
+  color: rgb(162, 44, 44);
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.likeButton svg {
+  margin-right: 5px;
+}
+.imgContainer {
+  position: relative; 
+  margin-bottom: 1px;
+}
+
+.navLinks{
+  height: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.navLinks li{
+  list-style: none;
+  margin: 0 12px;
+}
+.navLinks li a{
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.navLinks li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #1d8980;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.navLinks li a:hover:before{
+  width: 100%;
+}
+.navLinks li.active a:before {
+  width: 100%;
+}
+
+/* Login Style  */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 628px;
+  background-color: white;
+  width: 1340px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-left: 12px;
+  padding-right: 0px;
+}
+.welcomeBack{
+  text-align: center;
+  color: #333;
+  margin: 2px;
+}
+.enterDetails {
+  text-align: center;
+  color: #7e7979;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin:120px;
+}
+
+.inputContainer {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #101010;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.submitBtn{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #272828;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.googleBtn{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(246, 244, 244);
+  color: rgb(16, 15, 15);
+  cursor: pointer;
+  font-size: 16px;
+}
+.googleBtn:hover {
+  background-color: #edf1f4;
+}
+.submitBtn:hover {
+  background-color: #080a0c;
+}
+.message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+.imageContainer {
+  width: 100%; 
+  height: 628px;
+  background-image: url('./images/LoginImg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.rememberLabel,.signupLabel {
+  color: #333; 
+  font-size: 12px; 
+}
+
+.forgotPassword,.signUp {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  margin-left: 10px; 
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+.signUp{
+  color: #0d0c0c;
+  font-size: 14px;
+}
+
+.signUp:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
